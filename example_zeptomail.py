@@ -7,7 +7,7 @@ from email_sender import (
 def main():
 
     zepto = ZeptoMailClient(
-        credentials_file="./zepto.json"
+        credentials_file="./secret_zepto.json"
     )
 
     try:
@@ -45,7 +45,7 @@ This is an HTML email sent using the
             reply_to="support@example.com",
 
             # Optional
-            attachment="./report.pdf",
+            #attachment="./report.pdf",
         )
 
         print("Email sent successfully")

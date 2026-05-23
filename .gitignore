@@ -1,6 +1,6 @@
 __pycache__/
 venv/
-secrets.json
+secret*.json
 _*
 !__init__.py
 .venv/

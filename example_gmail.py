@@ -7,8 +7,8 @@ from email_sender import (
 def main():
 
     gmail = GmailClient(
-        secrets_file="./secret.json",
-        credentials_dir="./credentials",
+        secrets_file="./secret_gmail.json",
+        credentials_dir="./_credentials",
     )
 
     try:
@@ -43,7 +43,7 @@ This is an HTML email sent using the
             cc="manager@example.com",
 
             # Optional
-            attachment="./report.pdf",
+            #attachment="./report.pdf",
         )
 
         print("Email sent successfully")
