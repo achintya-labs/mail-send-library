@@ -1,7 +1,8 @@
 import mail_zepto as mail
 
 # File to store credentials in
-# mail.CRED = "meth.json"
+mail.CRED = "srmc_mathiitm.json"
+
 
 # Subject of mail
 SUBJECT = "Some Subject"

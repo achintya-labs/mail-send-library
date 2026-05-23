@@ -16,7 +16,7 @@ from email.mime.application import MIMEApplication
 
 
 
-CRED = "srmc_mathiitm.json"
+CRED = "zepto.json"
 
 SMTP_SERVER = "smtp.zeptomail.in"
 
