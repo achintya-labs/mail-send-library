@@ -2,3 +2,8 @@ __pycache__/
 venv/
 secret.json
 credentials/
+pm_sparc.py
+html_files
+.gitignore
+zepto.json
+srmc_mathiitm.json

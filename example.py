@@ -1,7 +1,7 @@
-import mail
+import mail_zepto as mail
 
 # File to store credentials in
-mail.CRED = "meth.json"
+# mail.CRED = "meth.json"
 
 # Subject of mail
 SUBJECT = "Some Subject"
@@ -37,11 +37,11 @@ def send_mails(records, subject, message, attachment):
         print(f"{itr}  {email}, {records[entry]}")
         
         mail.create_message_and_send(
-             sender="Mathematics Club <mathematicsclub_cfi@smail.iitm.ac.in>", 
+             sender="SRMC <noreply@srmc.mathiitm.com>", 
              to=email, 
              subject=subject, 
              message_text_html=unique_message, 
-             attached_file=attachment
+        #      attached_file=attachment
         )
 
 def main():
