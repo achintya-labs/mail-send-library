@@ -1,9 +1,8 @@
 __pycache__/
 venv/
-secret.json
-credentials/
-pm_sparc.py
-html_files
-.gitignore
-zepto.json
-srmc_mathiitm.json
+secrets.json
+_*
+!__init__.py
+.venv/
+*.egg-info/
+uv.lock
