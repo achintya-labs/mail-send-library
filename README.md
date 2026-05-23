@@ -341,4 +341,4 @@ gmail.send_email(
 
 # License
 
-Copyright 2026 Achintya Raghavan 
+The work is licensed under the GNU GPL v3
