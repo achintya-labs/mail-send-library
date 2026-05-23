@@ -1,2 +1,2 @@
-from .zeptomail import ZeptoMailClient
-from .gmail import GmailClient
+from .zeptomail import *
+from .gmail import *

@@ -1,26 +1,25 @@
-from email_sender.gmail import (
-    GmailClient,
-    GmailClientError,
+from email_sender import (
+    ZeptoMailClient,
+    ZeptoMailError,
 )
 
 
 def main():
 
-    gmail = GmailClient(
-        secrets_file="./secret.json",
-        credentials_dir="./credentials",
+    zepto = ZeptoMailClient(
+        credentials_file="./zepto.json"
     )
 
     try:
-        response = gmail.send_email(
-            sender="your_email@gmail.com",
+        response = zepto.send_email(
+            sender="sender@example.com",
             to="recipient@example.com",
-            subject="Test Email from Gmail API",
+            subject="Test Email from ZeptoMail",
 
             message_text_plain="""
 Hello,
 
-This is a plain text email sent using the Gmail API.
+This is a plain text email sent using ZeptoMail.
 
 Regards,
 email_sender
@@ -43,14 +42,17 @@ This is an HTML email sent using the
             cc="manager@example.com",
 
             # Optional
+            reply_to="support@example.com",
+
+            # Optional
             attachment="./report.pdf",
         )
 
         print("Email sent successfully")
         print(response)
 
-    except GmailClientError as exc:
-        print(f"Gmail Error: {exc}")
+    except ZeptoMailError as exc:
+        print(f"ZeptoMail Error: {exc}")
 
 
 if __name__ == "__main__":

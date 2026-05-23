@@ -1,1 +1,1 @@
-from .client import GmailClient
+from .client import GmailClient, GmailClientError, GmailAuthenticationError, GmailSendError
